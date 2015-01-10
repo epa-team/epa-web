@@ -1,0 +1,17 @@
+<div class="container" id="main">
+    <div class="row">
+        <div>
+            <div class="col-md-3">
+                <div class="well sidebar-nav">
+                    <div class="list-group">
+                        {{#link-to 'students' classNames="list-group-item"}}Students{{/link-to}}
+                        {{#link-to 'teachers' classNames="list-group-item"}}Teachers{{/link-to}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                {{outlet}}
+            </div>
+        </div>
+    </div>
+</div>
