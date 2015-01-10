@@ -26,3 +26,11 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+
+temp
+dist
+.sass-cache
+.tmp
+app/bower_components
+test/bower_components
