@@ -1,1 +1,20 @@
 <h1>Teachers</h1>
+
+<table class="table table-hover">
+    <tr>
+        <th>Selected</th>
+        <th>nombre</th>
+        <th>email</th>
+        <th>ci</th>
+        <th>birthDate</th>
+    </tr>
+    {{#each teacher in content}}
+    <tr {{bindAttr class="selected:warning"}}>
+        <td>{{view Ember.Checkbox checkedBinding="selected"}}</td>
+        <td>{{teacher.name}}</td>
+        <td>{{teacher.email}}</td>
+        <td>{{teacher.ci}}</td>
+        <td>{{teacher.birthDate}}</td>
+    </tr>
+    {{/each}}
+</table>
